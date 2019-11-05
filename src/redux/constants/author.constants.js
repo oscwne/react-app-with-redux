@@ -1,0 +1,3 @@
+// @flow
+export const LOAD_AUTHORS_SUCCESS: string = 'LOAD_AUTHORS_SUCCESS'
+export const CREATE_AUTHOR_SUCCESS: string = 'CREATE_AUTHOR_SUCCESS'

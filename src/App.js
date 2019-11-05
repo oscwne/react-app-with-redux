@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { Provider as ReduxProider } from 'react-redux'
+
+import Header from './components/common/Header'
+import About from './components/About'
+import Home from './components/Home'
+import NotFound from './components/NotFound'
+import configStore from './redux/store'
+import CoursesContainer from './components/Courses'
+
+const store = configStore()
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <ReduxProider store={store}>
+      <div className="container">
+        <Router>
+          <Header />
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/courses" exact component={CoursesContainer} />
+            <Route path="/about" component={About} />
+            <Route component={NotFound} />
+          </Switch>
+        </Router>
+      </div>
+    </ReduxProider>
+  )
 }
 
-export default App;
+export default App
