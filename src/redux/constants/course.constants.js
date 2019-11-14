@@ -1,5 +1,4 @@
 // @flow
 export const LOAD_COURSES_SUCCESS: string = 'LOAD_COURSES_SUCCESS'
-export const CREATE_COURSE: string = 'CREATE_COURSE'
-export const EDIT_COURSE: string = 'EDIT_COURSE'
-export const DELETE_COURSE: string = 'DLETE_COURSE'
+export const CREATE_COURSE_SUCCESS: string = 'CREATE_COURSE_SUCCESS'
+export const UPDATE_COURSE_SUCCESS: string = 'UPDATE_COURSE_SUCCESS'

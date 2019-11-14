@@ -16,6 +16,9 @@ const Header = () => {
       <NavLink to="/about" exact className="mx-2" activeStyle={activeStyle}>
         About
       </NavLink>
+      <NavLink to="/course" exact className="mx-2" activeStyle={activeStyle}>
+        Create Course
+      </NavLink>
     </nav>
   )
 }

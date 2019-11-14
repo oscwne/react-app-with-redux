@@ -8,6 +8,7 @@ import Home from './components/Home'
 import NotFound from './components/NotFound'
 import configStore from './redux/store'
 import CoursesContainer from './components/Courses'
+import CourseFormContainer from './components/Courses/CourseForm'
 
 const store = configStore()
 
@@ -20,6 +21,8 @@ function App() {
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/courses" exact component={CoursesContainer} />
+            <Route path="/course/:slug" component={CourseFormContainer} />
+            <Route path="/course/" component={CourseFormContainer} />
             <Route path="/about" component={About} />
             <Route component={NotFound} />
           </Switch>

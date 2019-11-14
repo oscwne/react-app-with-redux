@@ -69,11 +69,28 @@
       "slug": "web-components-shadow-dom",
       "authorId": 1,
       "category": "HTML5"
+    },
+    {
+      "id": 11,
+      "title": "test 3",
+      "authorId": 2,
+      "category": "test 3",
+      "createdAt": 1573668932822,
+      "slug": "test"
     }
   ],
   "authors": [
-    { "id": 1, "name": "Cory House" },
-    { "id": 2, "name": "Scott Allen" },
-    { "id": 3, "name": "Dan Wahlin" }
+    {
+      "id": 1,
+      "name": "Cory House"
+    },
+    {
+      "id": 2,
+      "name": "Scott Allen"
+    },
+    {
+      "id": 3,
+      "name": "Dan Wahlin"
+    }
   ]
 }
